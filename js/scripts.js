@@ -1,3 +1,9 @@
+var wordCount = function(words) {
+  var uniqueWords = getUniqueWords(words);
+  //etc
+}
+
+
 var getUniqueWords = function(words) {
   var wordsArray = words.split(" ");
   var sortedWords = wordsArray.sort();
@@ -17,10 +23,8 @@ var createObjectKeyName = function(uniqueWords) {
   return wordsObject;
 };
 
-var countsWordOccurence = function(words, wordsObject) {
+var countsWordOccurrence = function(words, wordsObject) {
   var wordsArray = words.split(" ");
-  var sortedWords = wordsArray.sort();
-  debugger;
   for (var key in wordsObject) {
     for(var i = 0; i < wordsArray.length; i++) {
       var word = wordsArray[i];
@@ -32,4 +36,5 @@ var countsWordOccurence = function(words, wordsObject) {
   return wordsObject;
 }
 
-//if key is the same as the word increment value by one
+
+//One more function to create display
