@@ -8,5 +8,43 @@
     <title>Word Order</title>
   </head>
   <body>
+    <div class="container">
+      <div class="well"><h1>Word Count</h1></div>
+
+      <div id="form">
+        <p>Enter some text below and your output will list how often that word shows up in the text.</p>
+        <br>
+        <div class="form">
+        <form id="wordForm">
+          <div class="form-group">
+            <label for="words">Text Here</label><br>
+            <textarea id="words" type="text" rows="10" cols="50"> </textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success">Enter</button>
+        </form><br><br>
+        </div>
+    </div>
+
+      <div id="results">
+        <h4>Your word list</h4>
+          <table class="table table-stripped">
+            <thead>
+              <tr>
+                <td>Word</td>
+                <td># of Occurrences</td>
+              </tr>
+            </thead>
+            <tbody class="wordList">
+            </tbody>
+          </table>
+
+
+
+        <p>Your inputted text: <span id="userInput"></span></p>
+
+        <a class="btn btn-success" href="index.html">Go Back</a>
+      </div>
+    </div>
   </body>
 </html>
